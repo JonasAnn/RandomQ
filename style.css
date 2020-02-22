@@ -1,0 +1,95 @@
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+#quote-box {
+  background-color: #fefefe;
+  border-radius: 3px;
+  margin: auto;
+  height: 11.5rem;
+  width: 24rem;
+  margin-top: 13%;
+  padding: 35px;
+  position: relative;
+}
+#text {
+  text-align: center;
+}
+#author{
+  font-size: 65%;
+  position: absolute;
+  right: 0;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+#tweet-quote {
+  color: #ffffff;
+}
+#link-boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 60px;
+  position: absolute;
+  bottom: 30px;
+}
+.tumblr {
+  background-color: green;
+  display: inline;
+  padding: 5px 12px;
+  border-radius: 3px;
+
+}
+.twitter {
+  background-color: green;
+  display: inline;
+  padding-left: 8px;
+  padding-right: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+.font {
+  font-size: 90%;
+}
+#link-box1 {
+  width: 30%;
+  padding-top: 15px;
+}
+#link-box2 {
+  width: 30%;
+  padding-top: 15px;
+}
+.btn {
+  border-radius: 3px;
+  padding: 10px 15px;
+  border: none;
+  background-color: green;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 60%;
+  margin-left: 8px;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: red;
+}
+
+
+/* ----end-------- */
+.owner {
+  text-align: center;
+  margin-top: 2%;
+  color: #ffffff;
+  font-size: 60%;
+  font-weight: 600;
+}
