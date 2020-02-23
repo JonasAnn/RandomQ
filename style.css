@@ -20,13 +20,15 @@ html{
 }
 #text {
   text-align: center;
+  padding-bottom: 15px;
+  
 }
 #author{
   font-size: 65%;
   position: absolute;
   right: 0;
   padding-right: 50px;
-  padding-top: 20px;
+
 }
 #tweet-quote {
   color: #ffffff;
@@ -37,7 +39,7 @@ html{
   width: 90%;
   height: 60px;
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
 }
 .tumblr {
   background-color: green;

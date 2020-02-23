@@ -12,44 +12,27 @@ authorArr = ['King Luther', 'Marvellous Kelvin', 'Nelly J. Man', 'Goodman Love',
 
 colorArr = ['#FF0000'	, '#800000', '#FFFF00', 	'#808000', 	'#00FF00', '#008000', '#00FFFF', 	'#008080', '#0000FF'];
 
-// gove.forEach(function(gove, index) {
-//   gove.textContent = `${index} : ${"love"}`;
-// });
+bgColorArr = ['#FF0000'	, '#800000', '#FFFF00', 	'#808000', 	'#00FF00', '#008000', '#00FFFF', 	'#008080', '#0000FF'];
+
 
 const buttonClick = document.getElementById("new-quote");
 const authorText = document.getElementById("text");
 const authorName = document.getElementById("author");
 const colorChain = document.querySelectorAll(".color-change");
+const bgColor = document.querySelectorAll(".bg-color");
 
-buttonClick.addEventListener("click", newEvent);
+
+ buttonClick.addEventListener("click", newEvent);
 
   function newEvent(e){
-    for (let t = 0; t < wordArr.length; t++) {
-    authorText.textContent = wordArr[t];
-  }
+    authorText.innerHTML = wordArr[Math.floor(Math.random() * 9)];
+    authorName.innerHTML = authorArr[Math.floor(Math.random() * 9)];
+    let fixedColor = colorArr[Math.floor(Math.random() * 9)];
+    colorChain.forEach(function(item){
+      item.style.color = fixedColor;
+    });
+    bgColor.forEach(function(items){
+      items.style.backgroundColor = fixedColor;
+    });
   
-};
-
-
-// buttonClick.addEventListener('click', nameEvent);
-
-// function nameEvent(e) {
-//   colorChain.style.color = "red"
-//   e.preventDefault();
-// };
-
-// for ( let c = 0; c < colorArr.length; c++) {
-//   console.log(colorArr[c]);
-// }
-
-// function colorEvent(e) {
-
-//   colorChain.style.color = "red"
-//   e.preventDefault();
-// };
-
-// let val; 
-
-// val = colorArr.length;
-
-// console.log(val);
+  };
