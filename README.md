@@ -3,7 +3,7 @@ Project is a random quote generator with was created to test HTML, CSS and JavaS
 
 [Preview Project](https://jonasann.github.io/RandomQ/)
 
-##Language Used
+## Language Used
 - HTML
 - CSS
 - Javascript
